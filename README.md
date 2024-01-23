@@ -65,7 +65,7 @@ Basic BPMN Test # 1
 	* End the process
 
 
-4.  Create proces referenced by Call Activity		
+4.  Create process referenced by Call Activity		
     *	Add an additional business process model notation process for the Call Activity above
     *	Name the process file process-completed-activity-status
     *	Ensure the process is configured to start when invoked by the call activity created in process-activity-status-evaluation...
@@ -76,8 +76,8 @@ Basic BPMN Test # 1
     *	This process is expected to use variables from the initiating process
     *	This process will have a start event, script task, and an end event
         *	Script task will reference userId
-		    *	If userId = 1 then set new varialbe expectedUser = true
-		    *	If userId != 1 then set new varialbe expectedUser = false	
+		    *	If userId = 1 then set new variable expectedUser = true
+		    *	If userId != 1 then set new variable expectedUser = false	
 8.    Styling
     *  Use BPMN best practices and labeling.
    
