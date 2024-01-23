@@ -23,7 +23,10 @@ Basic BPMN Test # 1
  	* Include potential errors if deployed to a Camunda engine and a process started
  	* List improvements the process could have added to it to reduce errors
 
-### Objective: Build a simple Camunda BPMN that makes non-complex decisions based on data fetched from an REST Api GET, configure an AWS SQS outbound connector and call activity.
+### Objective: 
+
+* Build a simple Camunda BPMN that makes non-complex decisions based on data fetched from an REST Api GET.
+* Configure an AWS SQS outbound connector and call activity.
 
 #### Requirements:
 
