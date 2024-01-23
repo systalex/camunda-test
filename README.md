@@ -3,24 +3,25 @@ Basic BPMN Test # 1
 
 ## Camunda BPMN Test: Environment Configuration Options
 1. Use a Free Camunda SaaS account
-	* Sign up for a free Camunda account [Create Camunda Account] https://accounts.cloud.camunda.io/signup?
+	* Sign up for a free Camunda account [Create Camunda Account](https://accounts.cloud.camunda.io/signup?)
 
 	a. Required Connectors
 		* Amazon SQS Outbound Connector
 		* Rest Connector
 		
 2. 	Use Camunda Desktop Modeler
-	* Download Camunda Desktop Modeler and follow the Get Started Instructions [Camunda Desktop Modeler] https://camunda.com/download/modeler/
+	* Download Camunda Desktop Modeler and follow the Get Started Instructions [Camunda Desktop Modeler](https://camunda.com/download/modeler/)
 	
 	a. Required Connectors
-		* Download "http-json-connector.json" [REST Connector] https://github.com/camunda/connectors/blob/main/connectors/http/rest/element-templates/http-json-connector.json
-		* Download "aws-sqs-outbound-connector.json" [Amazon SQS Outbound Connector] https://github.com/camunda/connectors/blob/main/connectors/aws/aws-sqs/element-templates/aws-sqs-outbound-connector.json
+		* Download "http-json-connector.json" [REST Connector](https://github.com/camunda/connectors/blob/main/connectors/http/rest/element-templates/http-json-connector.json)
+		* Download "aws-sqs-outbound-connector.json" [Amazon SQS Outbound Connector](https://github.com/camunda/connectors/blob/main/connectors/aws/aws-sqs/element-templates/aws-sqs-outbound-connector.json)
 		* Place the files in the Camunda Modeler directory; resources\element-templates
 
 ## Camunda BPMN Test: Task Description
 	* Task completion will demonstrate the ability to configure the most basic Camunda setup
 	* Send the completed .BPMN file to Systalex HR
-	* Include potential errors that could be seen if deployed to a Camunda engine, and list improvements the process should have added to it to reduce them
+	* Include potential errors if deployed to a Camunda engine and a process started
+	* List improvements the process could have added to it to reduce errors
 
 ## Objective: Build a simple Camunda BPMN that makes non-complex decisions based on data fetched from an REST Api GET, configure an AWS SQS outbound connector and call activity.
 
