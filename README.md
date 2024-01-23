@@ -1,7 +1,7 @@
 # Camunda-test-1
 Basic BPMN Test # 1 
 
-## Camunda BPMN Test: Environment Configuration Options
+### Camunda BPMN Test: Environment Configuration Options
 1. Use a Free Camunda SaaS account
 	* Sign up for a free Camunda account [Create Camunda Account](https://accounts.cloud.camunda.io/signup?)
 
@@ -17,15 +17,15 @@ Basic BPMN Test # 1
   		* Download "aws-sqs-outbound-connector.json" [Amazon SQS Outbound Connector](https://github.com/camunda/connectors/blob/main/connectors/aws/aws-sqs/element-templates/aws-sqs-outbound-connector.json)
   		* Place the files in the Camunda Modeler directory; resources\element-templates
 
-## Camunda BPMN Test: Task Description
+### Camunda BPMN Test: Task Description
 	* Task completion will demonstrate the ability to configure the most basic Camunda setup
  	* Send the completed .BPMN files to Systalex HR contact you are working with
  	* Include potential errors if deployed to a Camunda engine and a process started
  	* List improvements the process could have added to it to reduce errors
 
-## Objective: Build a simple Camunda BPMN that makes non-complex decisions based on data fetched from an REST Api GET, configure an AWS SQS outbound connector and call activity.
+### Objective: Build a simple Camunda BPMN that makes non-complex decisions based on data fetched from an REST Api GET, configure an AWS SQS outbound connector and call activity.
 
-### Requirements:
+#### Requirements:
 
 1.  Create a New Project
 	*	Add a business process model notation process called process-activity-status-evaluation- “your First name” “Your last Name”
