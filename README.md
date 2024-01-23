@@ -19,7 +19,7 @@ Basic BPMN Test # 1
 
 ## Camunda BPMN Test: Task Description
 	* Task completion will demonstrate the ability to configure the most basic Camunda setup
- 	* Send the completed .BPMN file to Systalex HR
+ 	* Send the completed .BPMN files to Systalex HR contact you are working with
  	* Include potential errors if deployed to a Camunda engine and a process started
  	* List improvements the process could have added to it to reduce errors
 
@@ -28,7 +28,7 @@ Basic BPMN Test # 1
 ### Requirements:
 
 1.  Create a New Project
-	*	Add a business process model notation process called Activity Status Evaluation “your First name” “Your last Name”
+	*	Add a business process model notation process called process-activity-status-evaluation- “your First name” “Your last Name”
  
 2.  Process Modeling
 	*	This process is assuming it will start by being invoked from another Camunda process or the start event may become an inbound connector in the future.
@@ -65,11 +65,24 @@ Basic BPMN Test # 1
 	* End the process
 
 
-4.  Styling
+4.  Create proces referenced by Call Activity		
+    *	Add an additional business process model notation process for the Call Activity above
+    *	Name the process file process-completed-activity-status
+    *	Ensure the process is configured to start when invoked by the call activity created in process-activity-status-evaluation...
+
+
+
+6.  Process Details
+    *	This process is expected to use variables from the initiating process
+    *	This process will have a start event, script task, and an end event
+        *	Script task will reference userId
+		    *	If userId = 1 then set new varialbe expectedUser = true
+		    *	If userId != 1 then set new varialbe expectedUser = false	
+8.    Styling
     *  Use BPMN best practices and labeling.
    
-6.  Deployment Management
+9.  Deployment Management
     * This process would not be expected to execute without being deployed into a environment without proper secrets being created.
 	
-7.   Error Handling
+10.   Error Handling
     * Implement or describe basic error handling in the email back to Systalex with the completed .BPMN file.
